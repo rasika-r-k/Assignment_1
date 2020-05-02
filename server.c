@@ -68,7 +68,7 @@ int main(int argc, char const *argv[])
 
     else if(child_pid == 0){
 
-    //setting uid for child process as nobody user(unprevileged user)
+    //setting uid for child process as nobody user(unprevileged user), -2 is nobody user id for the mac OS.
 	
 	setuid(-2);
 
